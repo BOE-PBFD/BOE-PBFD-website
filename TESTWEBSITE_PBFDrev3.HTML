@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotoviewer in Vensters</title>
+    <style>
+        body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    scroll-snap-type: y mandatory;
+    /* Verander deze kleur: */
+    background-color: #e0f2f7; /* Een zachte, frisse lichtblauwe kleur */
+}
+
+        section {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center; /* Horizontaal centreren */
+            align-items: center;     /* Verticaal centreren */
+            scroll-snap-align: start;
+        }
+
+        /* Dit is het 'venster' */
+        .window {
+            width: 40%;           /* Breedte van het venster */
+            height: 95vh;          /* Hoogte van het venster */
+            background-size: contain;      /* Zorgt dat de hele foto past zonder snijden */
+    background-repeat: no-repeat;  /* Voorkomt dat de foto zichzelf herhaalt */
+    background-position: center;   /* DIT zet de foto exact in het midden */
+    background-color: #e0f2f7;     /* Optioneel: de kleur van de 'randen' rond de foto */
+}
+            border-radius: 15px;   /* Mooie afgeronde hoeken */
+            box-shadow: 0 20px 50px rgba(0,0,0,0.2); /* Een zachte schaduw voor diepte */
+            border: 10px solid white; /* Een witte rand zoals een echte foto */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            color: white;
+            font-family: 'Arial', sans-serif;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
+
+        /* Je eigen foto's hier weer koppelen */
+        .foto-1 { background-image: url('foto1.png'); }
+        .foto-2 { background-image: url('foto2.png'); }
+        .foto-3 { background-image: url('foto3.png'); }
+	.foto-4 { background-image: url('foto4.png'); }
+	.foto-5 { background-image: url('foto5.png'); }
+	.foto-6 { background-image: url('foto6.png'); }
+	.foto-7 { background-image: url('foto7.png'); }
+	.foto-8 { background-image: url('foto8.png'); }
+	.foto-9 { background-image: url('foto9.png'); }
+	.foto-10 { background-image: url('foto10.png'); }
+    </style>
+</head>
+<body>
+
+    <section><div class="window foto-1"><h1>Foto 1</h1></div></section>
+    <section><div class="window foto-2"><h1>Foto 2</h1></div></section>
+    <section><div class="window foto-3"><h1>Foto 3</h1></div></section>
+    <section><div class="window foto-4"><h1>Foto 4</h1></div></section>
+    <section><div class="window foto-5"><h1>Foto 5</h1></div></section>
+    <section><div class="window foto-6"><h1>Foto 6</h1></div></section>
+    <section><div class="window foto-7"><h1>Foto 7</h1></div></section>
+    <section><div class="window foto-8"><h1>Foto 8</h1></div></section>
+    <section><div class="window foto-9"><h1>Foto 9</h1></div></section>
+    <section><div class="window foto-10"><h1>Foto 10</h1></div></section>
+
+</body>
+
+</body>
+</html>
